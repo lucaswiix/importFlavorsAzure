@@ -30,7 +30,7 @@ $( document ).ready(function(){
         sql+="'"+x.Memory+"', ";
         sql+="'"+x.price+"', ";
         sql+="'"+x.currency+"', ";
-        sql+="'"+moment().format('YYYY-MM-DD HH:mm:ss')+"',";
+        sql+="'"+moment().format('YYYY-MM-DD HH:mm:ss')+"', ";
         sql+="'South America (Sao Paulo)', ";
         sql+="'"+x.OsType+"'), ";
     });
