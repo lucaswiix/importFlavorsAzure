@@ -23,7 +23,7 @@ $( document ).ready(function(){
              }
     }
     // console.log(data);
-    var sql = "INSERT INTO flavorsazure (name, vCPU, memory, price, currency, versionDate, location, osType) VALUES ";
+    var sql = "INSERT INTO azureflavorprice (name, vCPU, memory, price, currency, versionDate, location, osType) VALUES ";
     data.forEach( function(x, index) {
         sql+="('"+x.name+"', ";
         sql+="'"+x.vCPU+"', ";
@@ -42,7 +42,7 @@ $( document ).ready(function(){
 });
 
 /*
- CREATE TABLE `flavorsazure` (
+ CREATE TABLE `azureflavorprice` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `vCPU` bigint(20) DEFAULT NULL,
